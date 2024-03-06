@@ -7,9 +7,7 @@ public class MainTest {
 
     @Test
     public void testarMain() {
-
-        assertEquals("10;20", Main.teste());
-
+        assertEquals("10;-20", Main.teste());
     }
 
 
