@@ -1,6 +1,6 @@
 package padroesProjeto.factoryMethod;
 
-public class ServicoVenda {
+public class ServicoVenda implements IServico{
 
     public String executar() {
         return "Venda efetivada";
