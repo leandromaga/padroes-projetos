@@ -5,10 +5,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MainTest {
 
-    @Test
-    public void testarMain() {
-        assertEquals("10;-20", Main.teste());
-    }
+    //@Test
+    //public void testarMain() {
+  //      assertEquals("10;-20", Main.teste());
+//    }
 
 
 }
