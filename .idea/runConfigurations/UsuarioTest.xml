@@ -1,0 +1,21 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="UsuarioTest" type="JUnit" factoryName="JUnit" activateToolWindowBeforeRun="false" nameIsGenerated="true">
+    <module name="padroes-projetos" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="padroesEstruturais.adapter.*" />
+        <option name="ENABLED" value="false" />
+      </pattern>
+    </extension>
+    <option name="PACKAGE_NAME" value="padroesEstruturais.adapter" />
+    <option name="MAIN_CLASS_NAME" value="padroesEstruturais.adapter.UsuarioTest" />
+    <option name="METHOD_NAME" value="" />
+    <option name="TEST_OBJECT" value="class" />
+    <option name="TEST_SEARCH_SCOPE">
+      <value defaultName="wholeProject" />
+    </option>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
