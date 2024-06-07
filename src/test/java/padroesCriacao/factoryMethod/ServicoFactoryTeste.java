@@ -10,9 +10,9 @@ import static org.junit.jupiter.api.Assertions.fail;
 public class ServicoFactoryTeste {
 
     @Test
-    void deveRetornarExcecaoParaServicoInexistente() {
+    public void deveRetornarExcecaoParaServicoInexistente() {
         try {
-            IServico servico = ServicoFactory.obterServico("Venda");
+            IServico servico = ServicoFactory.obterServico("Financiamento");
             fail();
         } catch (IllegalArgumentException e) {
             assertEquals("Serviço inexistente", e.getMessage());
@@ -20,9 +20,9 @@ public class ServicoFactoryTeste {
     }
 
     @Test
-    void deveRetornarExcecaoParaServicoInvalido() {
+    public void deveRetornarExcecaoParaServicoInvalido() {
         try {
-            IServico servico = ServicoFactory.obterServico("Consultoria");
+            IServico servico = ServicoFactory.obterServico("Vistoria");
             fail();
         } catch (IllegalArgumentException e) {
             assertEquals("Serviço inválido", e.getMessage());

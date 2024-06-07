@@ -1,6 +1,6 @@
 package padroesProjeto.padroesCriacao.factoryMethod;
 
-public class ServicoVistoria implements IServico {
+public class ServicoVistoria {
 
     public String executar() {
         return "Vistoria efetivada";

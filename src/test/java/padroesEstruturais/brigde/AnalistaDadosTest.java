@@ -1,6 +1,5 @@
 package padroesEstruturais.brigde;
 
-
 import padroesProjeto.padroesEstruturais.brigde.AnalistaDados;
 import padroesProjeto.padroesEstruturais.brigde.IExperiencia;
 import padroesProjeto.padroesEstruturais.brigde.Junior;

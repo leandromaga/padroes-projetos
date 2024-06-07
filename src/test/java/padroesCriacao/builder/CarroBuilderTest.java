@@ -13,26 +13,12 @@ public class CarroBuilderTest {
         try {
             CarroBuilder carroBuilder = new CarroBuilder();
             Carro carro = carroBuilder
-                    .setModelo("Modelo 1")
                     .setAno(2021)
+                    .setModelo("Modelo 1")
                     .build();
             fail();
         } catch (IllegalArgumentException e) {
             assertEquals("Marca inválida", e.getMessage());
-        }
-    }
-
-    @Test
-    void deveRetornarExcecaoParaCarroSemAno() {
-        try {
-            CarroBuilder carroBuilder = new CarroBuilder();
-            Carro carro = carroBuilder
-                    .setModelo("Modelo 1")
-                    .setMarca("Marca 1")
-                    .build();
-            fail();
-        } catch (IllegalArgumentException e) {
-            assertEquals("Ano inválido", e.getMessage());
         }
     }
 
@@ -48,6 +34,20 @@ public class CarroBuilderTest {
         assertEquals("Modelo 1", carro.getModelo());
         assertEquals("Marca 1", carro.getMarca());
         assertEquals(2021, carro.getAno());
+    }
+
+    @Test
+    void deveRetornarExcecaoParaCarroSemAno() {
+        try {
+            CarroBuilder carroBuilder = new CarroBuilder();
+            Carro carro = carroBuilder
+                    .setModelo("Modelo 1")
+                    .setMarca("Marca 1")
+                    .build();
+            fail();
+        } catch (IllegalArgumentException e) {
+            assertEquals("Ano inválido", e.getMessage());
+        }
     }
 
     @Test

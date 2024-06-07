@@ -21,6 +21,23 @@ class FuncionarioProxyTest {
     }
 
     @Test
+    void deveRetornarNomeGerente() {
+        Gerente gerente = new Gerente("Ana", "RH");
+
+        assertEquals("Ana", gerente.getNome());
+    }
+
+    @Test
+    void deveRetornarGerenteAlterado() {
+        Gerente gerente = new Gerente("Ana", "RH");
+        gerente.setNome("Joana");
+        gerente.setSetor("TI");
+
+        assertEquals("Joana", gerente.getNome());
+        assertEquals("TI", gerente.getSetor());
+    }
+
+    @Test
     void deveRetornarDadosPessoaisFuncionario() {
         FuncionarioProxy funcionario = new FuncionarioProxy(1);
 
@@ -47,5 +64,4 @@ class FuncionarioProxyTest {
             assertEquals("Gerente não autorizado", e.getMessage());
         }
     }
-
 }

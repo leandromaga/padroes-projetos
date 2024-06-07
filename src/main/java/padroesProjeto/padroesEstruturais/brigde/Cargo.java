@@ -12,9 +12,9 @@ public abstract class Cargo {
         this.experiencia = experiencia;
     }
 
-    public void setSalarioBase(float salarioBase) {
-        this.salarioBase = salarioBase;
-    }
+//    public void setSalarioBase(float salarioBase) {
+//        this.salarioBase = salarioBase;
+//    }
 
     public abstract float calcularSalario();
 }

@@ -9,14 +9,6 @@ public class Produto extends Armazem {
         this.tipo = tipo;
     }
 
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
     public String getArmazem() {
         return "Produto: " + this.getDescricao() + " - Tipo: " + this.tipo + "\n";
     }

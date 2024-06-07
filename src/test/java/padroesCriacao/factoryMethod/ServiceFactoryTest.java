@@ -33,13 +33,6 @@ public class ServiceFactoryTest {
         assertEquals("Venda cancelada", servico.cancelar());
     }
 
-    @Test
-    public void deveRetornarServicoVistoria() {
-        IServico servico = ServicoFactory.obterServico("Vistoria");
-        assertTrue(servico instanceof ServicoVistoria);
-        assertEquals("Vistoria efetivada", servico.executar());
-        assertEquals("Vistoria cancelada", servico.cancelar());
-    }
 
     @Test
     public void deveLancarExcecaoParaServicoInexistente() {
@@ -48,5 +41,14 @@ public class ServiceFactoryTest {
         });
         assertEquals("Serviço inexistente", excecao.getMessage());
     }
+
+    //    @Test
+//    public void deveRetornarServicoVistoria() {
+//        IServico servico = ServicoFactory.obterServico("Vistoria");
+//        assertTrue(servico instanceof ServicoVistoria);
+//        assertEquals("Vistoria efetivada", servico.executar());
+//        assertEquals("Vistoria cancelada", servico.cancelar());
+//    }
+
 
 }

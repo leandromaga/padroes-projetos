@@ -12,10 +12,6 @@ public abstract class Armazem {
         return descricao;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
     public abstract String getArmazem();
 
 

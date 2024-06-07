@@ -6,7 +6,7 @@ public class ServicoFactory {
         Class classe = null;
         Object objeto = null;
         try {
-            classe = Class.forName("padroesProjeto.factoryMethod.Servico" + servico);
+            classe = Class.forName("padroesProjeto.padroesCriacao.factoryMethod.Servico" + servico);
             objeto = classe.newInstance();
         } catch (Exception ex) {
             throw new IllegalArgumentException("Serviço inexistente");

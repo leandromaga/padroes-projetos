@@ -37,8 +37,10 @@ class ConcessionariaTest {
         concessionaira.cadastrar("Siena", "Fiat", "Itália");
         concessionaira.cadastrar("Polo", "Volkswagen", "Alemanha");
 
-        assertEquals(2, MarcaFactory.getTotalMarcas());
+        int totalMarcas = MarcaFactory.getTotalMarcas();
+        assertEquals(2, totalMarcas);
     }
+
 
 
 }

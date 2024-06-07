@@ -16,49 +16,42 @@ class decoratorTest {
     @Test
     void deveRetornarNotebookComUpgradeHd() {
         Notebook notebook = new Hd(new NotebookSimples(1000));
-
         assertEquals(1500, notebook.getPrecoTotal());
     }
 
     @Test
     void deveRetornarNotabookComUpgradeRam() {
         Notebook notebook = new Ram(new NotebookSimples(1000));
-
         assertEquals(1300, notebook.getPrecoTotal());
     }
 
     @Test
     void deveRetornarNotebookComUpgradePlacaVideo() {
         Notebook notebook = new PlacaVideo(new NotebookSimples(1000));
-
         assertEquals(2000, notebook.getPrecoTotal());
     }
 
     @Test
     void deveRetornarNotebookComUpgradeHdRam() {
         Notebook notebook = new Hd(new Ram(new NotebookSimples(1000)));
-
         assertEquals(1800, notebook.getPrecoTotal());
     }
 
     @Test
     void deveRetornarNotebookComUpgradeHdPlacaVideo() {
         Notebook notebook = new Hd(new PlacaVideo(new NotebookSimples(1000)));
-
         assertEquals(2500, notebook.getPrecoTotal());
     }
 
     @Test
     void deveRetornarNotebookComUpgradeRamPlacaVideo() {
         Notebook notebook = new Ram(new PlacaVideo(new NotebookSimples(1000)));
-
         assertEquals(2300, notebook.getPrecoTotal());
     }
 
     @Test
     void deveRetornarNotebookComUpgradeHdRamPlacaVideo() {
         Notebook notebook = new Hd(new Ram(new PlacaVideo(new NotebookSimples(1000))));
-
         assertEquals(2800, notebook.getPrecoTotal());
     }
 
