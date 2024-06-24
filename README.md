@@ -3,7 +3,7 @@
 
 
 # Implementação de Padrões de Projeto 
-Este repositório contém a implementação dos principais padrões de projeto de criação em Java, acompanhados de testes unitários robustos e análise de cobertura de testes.
+Este repositório contém a implementação dos principais padrões de projeto em Java, acompanhados de testes unitários robustos e análise de cobertura de testes.
 
 # Configuração do Ambiente de Desenvolvimento
    1. Java: Utilize a última versão estável do JDK para acessar as funcionalidades mais recentes da linguagem.
