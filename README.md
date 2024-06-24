@@ -1,6 +1,3 @@
-# padroes-projetos
-
-
 
 # Implementação de Padrões de Projeto 
 Este repositório contém a implementação dos principais padrões de projeto em Java, acompanhados de testes unitários robustos e análise de cobertura de testes.
@@ -11,7 +8,7 @@ Este repositório contém a implementação dos principais padrões de projeto e
    3. Testes Unitários: JUnit como framework para criação de testes unitários.
    4. Análise de Cobertura: JaCoCo para análise detalhada da cobertura dos testes.
    5. Controle de Versão: Git para versionamento do código.
-   6. IDE Recomendada: IntelliJ IDEA, Eclipse ou VS Code com suporte a Java.
+   6. IDE Recomendada: IntelliJ IDEA.
 
 # Repositório Git
    * URL do GitHub: [https://github.com/leandromaga/padroes-projetos] <br/>
