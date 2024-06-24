@@ -1,7 +1,7 @@
 package padroesProjeto.padroesComportamentais.interpreter;
 
-public class Parser {
-    public static void interpretar(String comando, Contexto contexto) {
+public class InterpretadorComandos {
+    public static void interpretar(String comando, SistemaDeControle sistemaDeControle) {
         String[] parts = comando.trim().split(" ");
         if (parts.length != 2) {
             throw new IllegalArgumentException("Comando inválido. Formato esperado: 'tipo +|-|= valor'.");
@@ -16,21 +16,21 @@ public class Parser {
 
         switch (tipo.toLowerCase()) {
             case "temperatura":
-                interpretarTemperatura(operacao, contexto);
+                interpretarTemperatura(operacao, sistemaDeControle);
                 break;
             case "umidade":
-                interpretarUmidade(operacao, contexto);
+                interpretarUmidade(operacao, sistemaDeControle);
                 break;
             default:
                 throw new IllegalArgumentException("Tipo de comando desconhecido: " + tipo);
         }
     }
 
-    private static void interpretarTemperatura(String operacao, Contexto contexto) {
-        new TemperaturaExpressao(operacao).interpretar(contexto);
+    private static void interpretarTemperatura(String operacao, SistemaDeControle sistemaDeControle) {
+        new TemperaturaExpressao(operacao).interpretar(sistemaDeControle);
     }
 
-    private static void interpretarUmidade(String operacao, Contexto contexto) {
-        new UmidadeExpressao(operacao).interpretar(contexto);
+    private static void interpretarUmidade(String operacao, SistemaDeControle sistemaDeControle) {
+        new UmidadeExpressao(operacao).interpretar(sistemaDeControle);
     }
 }

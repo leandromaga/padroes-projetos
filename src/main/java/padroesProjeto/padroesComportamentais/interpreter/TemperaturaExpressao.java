@@ -1,6 +1,6 @@
 package padroesProjeto.padroesComportamentais.interpreter;
 
-public class TemperaturaExpressao implements Expressao {
+public class TemperaturaExpressao implements InterpretadorExpressao  {
     private final String operacao;
     private final int valor;
 
@@ -10,19 +10,19 @@ public class TemperaturaExpressao implements Expressao {
     }
 
     @Override
-    public void interpretar(Contexto contexto) {
-        int temperaturaAtual = contexto.getTemperatura();
+    public void interpretar(SistemaDeControle  sistemaDeControle) {
+        int temperaturaAtual = sistemaDeControle.getTemperatura();
         switch (operacao) {
             case "+":
-                contexto.setTemperatura(temperaturaAtual + valor);
+                sistemaDeControle.setTemperatura(temperaturaAtual + valor);
                 break;
             case "-":
-                contexto.setTemperatura(temperaturaAtual - valor);
+                sistemaDeControle.setTemperatura(temperaturaAtual - valor);
                 break;
             case "=":
-                contexto.setTemperatura(valor);
+                sistemaDeControle.setTemperatura(valor);
                 break;
         }
-        System.out.println("Temperatura ajustada para: " + contexto.getTemperatura());
+        System.out.println("Temperatura ajustada para: " + sistemaDeControle.getTemperatura());
     }
 }

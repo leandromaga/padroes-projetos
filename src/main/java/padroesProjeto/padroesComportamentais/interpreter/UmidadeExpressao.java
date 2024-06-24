@@ -1,6 +1,6 @@
 package padroesProjeto.padroesComportamentais.interpreter;
 
-public class UmidadeExpressao implements Expressao {
+public class UmidadeExpressao implements InterpretadorExpressao  {
     private final String operacao;
     private final int valor;
 
@@ -10,19 +10,19 @@ public class UmidadeExpressao implements Expressao {
     }
 
     @Override
-    public void interpretar(Contexto contexto) {
-        int umidadeAtual = contexto.getUmidade();
+    public void interpretar(SistemaDeControle sistemaDeControle) {
+        int umidadeAtual = sistemaDeControle.getUmidade();
         switch (operacao) {
             case "+":
-                contexto.setUmidade(umidadeAtual + valor);
+                sistemaDeControle.setUmidade(umidadeAtual + valor);
                 break;
             case "-":
-                contexto.setUmidade(umidadeAtual - valor);
+                sistemaDeControle.setUmidade(umidadeAtual - valor);
                 break;
             case "=":
-                contexto.setUmidade(valor);
+                sistemaDeControle.setUmidade(valor);
                 break;
         }
-        System.out.println("Umidade ajustada para: " + contexto.getUmidade());
+        System.out.println("Umidade ajustada para: " + sistemaDeControle.getUmidade());
     }
 }

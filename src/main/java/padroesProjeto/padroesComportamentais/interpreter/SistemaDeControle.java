@@ -3,7 +3,7 @@ package padroesProjeto.padroesComportamentais.interpreter;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Contexto {
+public class SistemaDeControle  {
     private Map<String, Integer> valores = new HashMap<>();
 
     public int getValor(String chave) {
